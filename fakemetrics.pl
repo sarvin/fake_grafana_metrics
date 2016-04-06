@@ -20,13 +20,13 @@ my @request_sources = qw(apache systask);
 my $layers = {
 	data => {
 		mal_e => {
-			analytics_listing_select => [qw(elapsed)]
+			__analytics_listing__select => [qw(elapsed)]
 		},
 		mongo => {
 			__valuation__select => [qw(elapsed)]
 		},
 		kard => {
-			transfer_report => [qw(elapsed)]
+			__transfer__dealer__vehicle__trade__appraisal_recommendation__sale__select => [qw(elapsed)]
 		},
 	},
 	logic => {
@@ -46,11 +46,11 @@ my $layers = {
 			processed_feed_set => [qw(elapsed)],
 		},
 		inventory => {
-			'save-created' => [qw(count)],
-			'save-updated' => [qw(count)],
+			'save_created' => [qw(count)],
+			'save_updated' => [qw(count)],
 		},
 		media => {
-			'save-created' => [qw(count)],
+			'save_created' => [qw(count)],
 		},
 	},
 };
